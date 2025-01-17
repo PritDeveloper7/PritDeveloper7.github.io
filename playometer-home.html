@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play-O-Meter</title>
+    <link rel="stylesheet" href="play-o-meter-web-css.css">
+    <style>
+        body {
+            background-image: url('play2.jpg');
+			background-color:purple;
+            background-size: cover;
+            background-position: center;
+            color:white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+	    border:5px solid white;
+        }
+        h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.8em;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 40px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            animation: slideIn 1s ease-in-out;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            display: inline-block;
+            background-color: #ff5722;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            background-color: #e64a19;
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>PLAY-O-METER</h1>
+    <p>Welcome to an amazing world of physical games - Get Healthified!</p>
+    
+    <div class="container">
+        <nav>
+            <a href="playometer-login.html">LOGIN</a>
+            <a href="playometer-about.html">ABOUT</a>
+            <a href="playometer-help.html">HELP</a>
+			<a href="playometer-form.html">FORM</a>
+        </nav>
+    </div>
+</body>
+</html>
